@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Themed Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            position: relative;
-            text-align: center;
-        }
-        header img {
-            width: 100%;
-            height: auto;
-            /* Optional: Add a subtle shadow to enhance the 3D effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #575757;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakeke Virtual Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0097a9;
+      --background: #f4f8fb;
+      --text: #1e1e1e;
+      --font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    header img {
+      height: 36px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #4a4a4a;
+      margin-bottom: 2rem;
+    }
+
+    #chatbase-container {
+      max-width: 100%;
+      height: 600px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <img src="https://www.zakeke.com/wp-content/uploads/2022/12/logo-zakeke.svg" alt="Zakeke Logo">
+  </header>
 
-    <header>
-        <!-- Replace the src value with the path to your actual 3D-themed image -->
-        <img src="https://via.placeholder.com/1200x400?text=3D+Test" alt="3D Test">
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="content">
-        <h1>3D Test Webpage</h1>
-        <p></p>
-        <iframe src="https://www.3dandarviewer.com/?name=AC280_06_0039&modelCode=AC280_06_0039&userID=261555&dam=true&currency=EUR&ecommerce=viewer&qty=1&culture=en-US&fromUrl=1" frameborder="0" width="600px" height="600px" allow="fullscreen; accelerometer; magnetometer; autoplay; encrypted-media; gyroscope; picture-in-picture; camera *; xr-spatial-tracking;"></iframe>
-
-
-
-        
-        
+  <main>
+    <h1>Meet the Zakeke Virtual Assistant</h1>
+    <p>Get personalized guidance to choose the right customization tool and share key details for your project.</p>
+    <div id="chatbase-container">
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/Y-yzwlPD78T3W55uSIggH"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+    ></iframe>
     </div>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y-yzwlPD78T3W55uSIggH";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+  </main>
+
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y-yzwlPD78T3W55uSIggH";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+  <footer>
+    &copy; 2025 Zakeke - All rights reserved.
+  </footer>
 </body>
+
 </html>
-       
