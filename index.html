@@ -93,8 +93,20 @@
   </main>
 
   <script>
+    // Genera un ID univoco per la sessione
+    const sessionId = crypto.randomUUID();
+    
+    // Configurazione per la chat bubble
     window.chatbaseConfig = {
       chatbotId: "Y-yzwlPD78T3W55uSIggH",
+    };
+
+    // Configurazione utente con ID sessione
+    window.chatbaseUserConfig = {
+      user_metadata: {
+        session_id: sessionId,
+        timestamp: new Date().toISOString()
+      }
     };
   </script>
   <script
