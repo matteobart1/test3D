@@ -109,6 +109,28 @@
       }
     };
   </script>
+  <script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+    >
+    <script type="module">
+    import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+    UC.defineComponents(UC);
+    </script>
+
+    <uc-config
+    ctx-name="my-uploader"
+    use-cloud-image-editor="false"
+    source-list="local"
+    pubkey="b50db034602961a73c98"
+    ></uc-config>
+
+    <uc-file-uploader-regular
+    ctx-name="my-uploader"
+    class="uc-light uc-orange"
+    ></uc-file-uploader-regular>
+  </script>
   
   <footer>
     &copy; 2025 Zakeke - All rights reserved.
