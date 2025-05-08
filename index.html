@@ -66,6 +66,26 @@
       overflow: hidden;
     }
 
+    .separator {
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--primary), transparent);
+      margin: 60px auto;
+      position: relative;
+    }
+
+    .separator::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary);
+      border-radius: 50%;
+    }
+
     footer {
       margin-top: 80px;
       text-align: center;
@@ -81,8 +101,8 @@
   </header>
 
   <main>
-    <h1>CHATBASE.CO</h1>
-    <p>Versione realizzata con Chatbase.co</p>
+    <h1>Meet the Zakeke Virtual Assistant</h1>
+    <p>Get personalized guidance to choose the right customization tool and share key details for your project.</p>
     <div id="chatbase-container">
       <iframe
         src="https://www.chatbase.co/chatbot-iframe/Y-yzwlPD78T3W55uSIggH"
@@ -91,6 +111,22 @@
         style="border: none;"
         allow="microphone;"
       ></iframe>
+    </div>
+
+    <div class="separator"></div>
+
+    <h1>ZAPIER</h1>
+    <p>Versione realizzata con Zapier</p>
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+      <iframe src='https://interfaces.zapier.com/embed/chatbot/cmac8fdqs002g632h9vq6zppe' height='700px' width='700px' allow='clipboard-write *' style="border: none;"></iframe>
+    </div>
+
+    <div class="separator"></div>
+
+    <h1>ZAPIER 2.0</h1>
+    <p>Versione realizzata con Zapier con prompt aggiornato</p>
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+      <iframe src='https://interfaces.zapier.com/embed/chatbot/cmafg0suv000alb6gxd811dl3' height='700px' width='700px' allow='clipboard-write *' style="border: none;"></iframe>
     </div>
   </main>
 
@@ -106,25 +142,16 @@
     // Configurazione utente con ID sessione
     window.chatbaseUserConfig = {
       user_metadata: {
-        web_session_id: sessionId,
+        session_id: sessionId,
         timestamp: new Date().toISOString()
       }
     };
   </script>
-  
-    
-  <h1>ZAPIER</h1>
-  <p>Versione realizzata con Zapier</p>
-  <div style="display: flex; justify-content: center; margin: 20px 0;">
-    <iframe src='https://interfaces.zapier.com/embed/chatbot/cmac8fdqs002g632h9vq6zppe' height='700px' width='700px' allow='clipboard-write *' style="border: none;"></iframe>
-  </div>
-
-  <h1>ZAPIER 2.0</h1>
-  <p>Versione realizzata con Zapier con prompt aggiornato</p>
-  <div style="display: flex; justify-content: center; margin: 20px 0;">
-    <iframe src='https://interfaces.zapier.com/embed/chatbot/cmafg0suv000alb6gxd811dl3' height='600px' width='400px' allow='clipboard-write *' style="border: none;"></iframe>
-  </div>
-
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    id="Y-yzwlPD78T3W55uSIggH"
+    defer>
+  </script>
 
   <footer>
     &copy; 2025 Zakeke - All rights reserved.
